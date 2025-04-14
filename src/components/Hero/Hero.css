@@ -70,6 +70,7 @@
 }
 
 .hero-connect:hover {
+    color: white;
     border: 1.5px solid rgb(3, 32, 39);
     box-shadow:
         0 4px 8px 0 rgba(4, 106, 129, 0.5),
@@ -81,6 +82,10 @@
     box-shadow:
         0 4px 8px 0 rgba(4, 106, 129, 0.5),
         0 6px 20px 0 rgba(24, 145, 200, 0.4);
+}
+
+.anchor-link:hover {
+    color: white;
 }
 
 @media(max-width: 768px) {

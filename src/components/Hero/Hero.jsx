@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import Model2 from "../../assets/model-2.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import resume from "../../../src/assets/Resume_Zahur.pdf";
 
 const Hero = () => {
   return (
@@ -25,7 +26,17 @@ const Hero = () => {
             Connect With Me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <div
+          className="hero-resume"
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/Resume_Zahur.pdf";
+            link.download = "Resume_Zahur.pdf";
+            link.click();
+          }}
+        >
+          My Resume
+        </div>
       </div>
     </div>
   );
