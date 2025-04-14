@@ -1,0 +1,110 @@
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork_title {
+    position: relative;
+}
+
+.mywork_title h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.theme_pattern1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* z-index: -1; */
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10px;
+    border-radius: 60%;
+    background: linear-gradient(267deg, #004d5f 19.36%, #1891c8 102.60%);
+}
+
+.mywork_container img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #01133d;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.mywork_container img:hover {
+    border: 1.5px solid #1891c8;
+    box-shadow:
+        0 4px 8px 0 rgba(4, 106, 129, 0.5),
+        0 6px 20px 0 rgba(24, 145, 200, 0.4);
+    transform: scale(1.10);
+
+}
+
+.mywork_container {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1.3fr;
+    gap: 30px;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 20px;
+    border-radius: 50px;
+    border: 1.5px solid #1891c8;
+    padding: 15px 60px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+}
+
+.mywork-showmore:hover {
+    gap: 40px;
+    transition: 0.6s;
+    /* border: 1.5px solid rgb(3, 32, 39); */
+    box-shadow:
+        0 4px 8px 0 rgba(4, 106, 129, 0.5),
+        0 6px 20px 0 rgba(24, 145, 200, 0.4);
+}
+
+@media(max-width:768px) {
+    .mywork {
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+
+    .mywork_title h1 {
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .theme_pattern1 {
+        height: 4px;
+    }
+
+    .mywork_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .mywork_container img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mywork-showmore {
+        padding: 20px 40px;
+        font-size: 22px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+}
