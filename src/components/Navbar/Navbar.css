@@ -9,7 +9,8 @@
 .navbar .logo-img {
     width: 10%;
     cursor: pointer;
-
+    /* mix-blend-mode: multiply;
+    filter: brightness(0) invert(1); */
 }
 
 .navbar .nav-open-menu {
@@ -92,9 +93,13 @@
     display: none;
 }
 
+
+
+
 @media(max-width:768px) {
     .navbar {
         margin: 20px 50px;
+        width: 32rem;
     }
 
     .nav-connect {
@@ -123,7 +128,7 @@
         top: 0;
         gap: 30px;
         /* background: #046a8115; */
-        background: #002a3d3d;
+        background: #222532;
         width: 320px;
         height: 100%;
         z-index: 2;

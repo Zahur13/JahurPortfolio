@@ -4,17 +4,17 @@ import profile_img from "../../assets/model.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="about">
+    <div id="about" className="about sm:mx-4 sm:gap-10">
       <div className="about-title">
-        <h1>About me</h1>
+        <h1 className="sm:text-3xl">About me</h1>
         <div className="theme-pattern"></div>
       </div>
-      <div className="about-section">
-        <div className="about-left">
-          <img src={profile_img} alt="" />
+      <div className="about-section sm:gap-6">
+        <div className="about-left sm:block sm:w-full">
+          <img src={profile_img} alt="" className="sm:w-full sm:rounded-lg" />
         </div>
-        <div className="about-right">
-          <div className="about-para">
+        <div className="about-right sm:gap-6">
+          <div className="about-para sm:text-sm">
             <p>
               {" "}
               I am an experienced fullstack developer with over a decade of

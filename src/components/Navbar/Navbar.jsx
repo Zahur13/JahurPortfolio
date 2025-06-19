@@ -2,6 +2,7 @@ import "./Navbar.css";
 
 import React, { useRef, useState } from "react";
 import logo from "../../assets/js-log.png";
+// import logo2 from "file:///Users/zahurshaikh/Desktop/JS_logo/2.png";
 import Menu from "../../assets/menu-icon2.png";
 import Back_Menu from "../../assets/back-icon2.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -17,15 +18,21 @@ const Navbar = () => {
     menuRef.current.style.right = "-350px";
   };
   return (
-    <div className="navbar">
-      <img src={logo} alt="logo" className="logo-img" />
-      <img src={Menu} onClick={openMenu} alt="" className="nav-open-menu" />
-      <ul ref={menuRef} className="nav-menu">
+    <div className="navbar my-2.5 mx-44">
+      <img src={logo} alt="logo" className="logo-img w-8 lg:w-12 md:w-10" />
+      {/* <img src={logo2} alt="logo" className="logo-img" /> */}
+      <img
+        src={Menu}
+        onClick={openMenu}
+        alt=""
+        className="nav-open-menu lg:hidden"
+      />
+      <ul ref={menuRef} className="nav-menu ">
         <img
           src={Back_Menu}
           onClick={closeMenu}
           alt="Back_Menu"
-          className="nav-back-menu"
+          className="nav-back-menu "
         />
         <li>
           <AnchorLink className="anchor-link" href="#home">
@@ -83,7 +90,7 @@ const Navbar = () => {
           {menu === "contact" ? <div className="underline"></div> : <></>}
         </li>
       </ul>
-      <div className="nav-connect">
+      <div className="nav-connect ">
         <AnchorLink className="anchor-link" offset={50} href="#contact">
           Connect With Me
         </AnchorLink>

@@ -94,6 +94,7 @@
     .hero img {
         margin-top: 40px;
         width: 260px;
+        /* margin-left: 17rem; */
 
     }
 
@@ -104,10 +105,10 @@
     }
 
     .hero p {
-        width: 60%;
+        width: 100%;
         font-size: 18px;
         line-height: 32px;
-        margin: 10px 0;
+        /* margin: 10px 0; */
     }
 
     .hero-action {
@@ -115,16 +116,18 @@
         font-size: 18px;
         font-weight: 500;
         margin-bottom: 50px;
+        width: 0%;
     }
 
     .hero-connect {
-        padding: 20px 30px;
+        padding: 5px 60px;
         border-radius: 40px;
     }
 
     .hero-resume {
-        padding: 20px 50px;
+        padding: 5px 60px;
         border-radius: 40px;
+        text-align: center;
     }
 
 }
