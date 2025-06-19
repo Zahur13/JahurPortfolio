@@ -86,7 +86,7 @@
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
-    width: 60%;
+    /* width: 60%; */
     margin: 0;
 }
 
@@ -100,7 +100,7 @@
     .services {
         align-items: start;
         gap: 70px;
-        margin: 20px 70px;
+        margin: 0px 60px;
 
     }
 
@@ -115,7 +115,7 @@
 
     .services_format {
         gap: 20px;
-        padding: 32px;
+        padding: 18px;
     }
 
     .services_format h2 {

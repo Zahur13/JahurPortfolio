@@ -37,7 +37,7 @@
 .footer-email-input {
     display: flex;
     gap: 30px;
-    padding: 15px 60px;
+    padding: 10px 8px;
     border-radius: 50px;
     background: #046a8115;
     padding-right: 80px;
@@ -107,7 +107,7 @@
 
 @media(max-width:768px) {
     .footer {
-        margin: 50px 70px;
+        margin: 10px 20px;
     }
 
     .footer-top {

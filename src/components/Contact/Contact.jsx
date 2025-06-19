@@ -28,12 +28,12 @@ const Contact = () => {
     }
   };
   return (
-    <div id="contact" className="contact">
+    <div id="contact" className="contact w-[100%] lg:w-[80%]">
       <div className="contact-title">
         <h1>Get in touch</h1>
         <div className="theme-pattern1"></div>
       </div>
-      <div className="contact-section">
+      <div className="contact-section lg:gap-[150px] gap-[80px]">
         <div className="contact-left">
           <h1>Let's talk</h1>
           <p>
@@ -44,7 +44,7 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <img src={Mail} alt="" />
-              <p>zbshaikh****@gmail.com</p>
+              <p>zbshaikh1326@gmail.com</p>
             </div>
             <div className="contact-detail">
               <img src={Call} alt="" />
@@ -58,14 +58,25 @@ const Contact = () => {
         </div>
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Your Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
+          <input
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            className="w-[135%] lg:w-[700px]"
+          />
           <label htmlFor="">Your Email</label>
-          <input type="email" placeholder="Enter your email" name="email" />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            className="w-[135%] lg:w-[700px]"
+          />
           <label htmlFor="">Write your message here</label>
           <textarea
             name="message"
             rows={8}
             placeholder="Enter you message"
+            className="w-[135%] lg:w-[700px]"
           ></textarea>
           <button className="contact-submit">Submit now</button>
         </form>

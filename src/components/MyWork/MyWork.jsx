@@ -5,7 +5,7 @@ import Arrow from "../../assets/right-arrow.png";
 
 const MyWork = () => {
   return (
-    <div id="work" className="mywork">
+    <div id="work" className="mywork w-[133%] lg:w-[80%]">
       <div className="mywork_title">
         <h1>My Latest Work</h1>
         <div className="theme_pattern1"></div>
