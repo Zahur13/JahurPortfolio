@@ -9,7 +9,7 @@ const Footer = () => {
   };
   return (
     <div className="footer">
-      <div className="footer-top">
+      <div className="footer-top lg:w-[78%]">
         <div className="footer-top-left flex items-center justify-center gap-8 w-[170%] lg:block ">
           <img src={FooterLogo} alt="footer-img" />
           <p>
