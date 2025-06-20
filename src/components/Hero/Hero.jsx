@@ -1,13 +1,28 @@
 import React from "react";
 import "./Hero.css";
 import Model2 from "../../assets/model-2.jpg";
+// import Model3 from "../../assets/model3.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import ProfileCard from "../ProfileCard/ProfileCard";
 // import resume from "../../../src/assets/Resume_Zahur.pdf";
 
 const Hero = () => {
   return (
     <div id="home" className="hero">
-      <img src={Model2} alt="profile_img" className="ml-64 lg:ml-0" />
+      {/* <img src={Model2} alt="profile_img" className="ml-64 lg:ml-0" /> */}
+      <ProfileCard
+        name=""
+        title=""
+        handle="Jahurhusen"
+        status="Online"
+        contactText="Contact Me"
+        // avatarUrl="/path/to/avatar.jpg"
+        // avatarUrl="/Users/zahurshaikh/Coding/react/Portfolio-react/src/assets/model3.png"
+        avatarUrl={Model2}
+        showUserInfo={true}
+        enableTilt={true}
+        onContactClick={() => console.log("Contact clicked")}
+      />
       <h1 className="ml-64 lg:ml-0">
         <span>I'm Jahurhusen Shaikh,</span> Fullstack Developer.
       </h1>
