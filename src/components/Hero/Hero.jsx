@@ -4,7 +4,8 @@ import Model2 from "../../assets/model-2.jpg";
 // import Model3 from "../../assets/model3.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileCard from "../ProfileCard/ProfileCard";
-// import resume from "../../../src/assets/Resume_Zahur.pdf";
+// import resume from "../../../src/assets/FSD_JAHUR_RESUME2.0";
+// import resume from "../../assets/FSD_JAHUR_RESUME2.0.pdf";
 
 const Hero = () => {
   return (
@@ -45,8 +46,8 @@ const Hero = () => {
           className="hero-resume"
           onClick={() => {
             const link = document.createElement("a");
-            link.href = "/Resume_Zahur.pdf";
-            link.download = "Resume_Zahur.pdf";
+            link.href = "/FSD_JAHUR_RESUME2.0.pdf";
+            link.download = "FSD_JAHUR_RESUME2.0.pdf";
             link.click();
           }}
         >
