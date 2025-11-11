@@ -2,13 +2,13 @@ import React from "react";
 import Model2 from "../../assets/model-2.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileCard from "../ProfileCard/ProfileCard";
-import resume from "../../assets/FSD_JAHUR_RESUME2.0.pdf";
+import resume from "../../assets/FSD-Zahur Resume4.0.pdf";
 
 const Hero = () => {
   const handleResumeDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "FSD_JAHUR_RESUME2.0.pdf";
+    link.download = "FSD-Zahur Resume4.0.pdf";
     link.target = "_blank";
     document.body.appendChild(link);
     link.click();

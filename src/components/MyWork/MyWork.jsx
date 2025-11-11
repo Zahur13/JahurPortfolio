@@ -6,6 +6,7 @@ import Arrow from "../../assets/right-arrow.png";
 const MyWork = () => {
   const [selectedWork, setSelectedWork] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   const handleWorkClick = (work, index) => {
     // Only show popup on mobile/tablet devices
@@ -20,6 +21,17 @@ const MyWork = () => {
     setSelectedWork(null);
   };
 
+  const handleShowMore = () => {
+    setShowAll(true);
+  };
+
+  const handleShowLess = () => {
+    setShowAll(false);
+  };
+
+  // Display only first 6 projects initially, or all if showAll is true
+  const displayWorks = showAll ? MyWork_Data : MyWork_Data.slice(0, 6);
+
   return (
     <div id="work" className="mywork w-[133%] lg:w-[80%]">
       <div className="mywork_title">
@@ -27,7 +39,7 @@ const MyWork = () => {
         <div className="theme_pattern1"></div>
       </div>
       <div className="mywork_container">
-        {MyWork_Data.map((work, index) => {
+        {displayWorks.map((work, index) => {
           return (
             <div
               key={index}
@@ -155,9 +167,33 @@ const MyWork = () => {
         </div>
       )}
 
-      <div className="mywork-showmore">
-        <p>Show More</p>
-        <img src={Arrow} alt="" />
+      {/* More/Less Toggle Buttons */}
+      <div className="flex justify-center mt-8 md:mt-12 w-full">
+        {!showAll ? (
+          <button
+            onClick={handleShowMore}
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-3 rounded-md hover:opacity-90 transition-all duration-300 flex items-center gap-3 text-[16px] md:text-[18px] font-medium shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            Show More
+            <img
+              src={Arrow}
+              alt="arrow-icon"
+              className="w-4 h-4 md:w-5 md:h-5 invert"
+            />
+          </button>
+        ) : (
+          <button
+            onClick={handleShowLess}
+            className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 md:px-8 py-3 rounded-md hover:opacity-90 transition-all duration-300 flex items-center gap-3 text-[16px] md:text-[18px] font-medium shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            Show Less
+            <img
+              src={Arrow}
+              alt="arrow-icon"
+              className="w-4 h-4 md:w-5 md:h-5 invert rotate-180"
+            />
+          </button>
+        )}
       </div>
 
       {/* Add custom CSS for animation */}
