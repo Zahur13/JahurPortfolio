@@ -5,6 +5,10 @@ import Project4_img from "../assets/project4.png";
 import Project5_img from "../assets/project5.png";
 import Project6_img from "../assets/project6.png";
 import Project7_img from "../assets/project7.png";
+import Project8_img from "../assets/project8.png";
+import Project9_img from "../assets/project9.png";
+import Project10_img from "../assets/project10.png";
+import Project11_img from "../assets/project11.png";
 
 const MyWork_Data = [
   {
@@ -56,6 +60,34 @@ const MyWork_Data = [
     w_img: Project7_img,
     github_url: "https://github.com/Zahur13/ConnectSphere",
     website_url: "https://connect-sphere-fawn.vercel.app/",
+  },
+  {
+    w_no: "08",
+    w_name: "Mini ShopHub",
+    w_img: Project8_img,
+    github_url: "https://github.com/Zahur13/Mini-ShopHub",
+    website_url: "https://mini-shop-hub.vercel.app/",
+  },
+  {
+    w_no: "09",
+    w_name: "Client Side Routing with React Router",
+    w_img: Project9_img,
+    github_url: "https://github.com/Zahur13/ClientSideRouting",
+    website_url: "https://client-side-routing-umber.vercel.app//",
+  },
+  {
+    w_no: "10",
+    w_name: "Random-String-Generator",
+    w_img: Project10_img,
+    github_url: "https://github.com/Zahur13/Random-String-Generator",
+    website_url: "https://random-string-generator-rouge.vercel.app//",
+  },
+  {
+    w_no: "11",
+    w_name: "Text Translator",
+    w_img: Project11_img,
+    github_url: "https://github.com/Zahur13/TextTranslator",
+    website_url: "https://text-translator-ivory.vercel.app/",
   },
 ];
 export default MyWork_Data;
