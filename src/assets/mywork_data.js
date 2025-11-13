@@ -9,6 +9,7 @@ import Project8_img from "../assets/project8.png";
 import Project9_img from "../assets/project9.png";
 import Project10_img from "../assets/project10.png";
 import Project11_img from "../assets/project11.png";
+import Project12_img from "../assets/project12.png";
 
 const MyWork_Data = [
   {
@@ -27,7 +28,7 @@ const MyWork_Data = [
   },
   {
     w_no: "03",
-    w_name: "India Water & Rainfall Monitor",
+    w_name: "India-Water-&-Rainfall-Monitor",
     w_img: Project3_img,
     github_url:
       "https://github.com/Zahur13/india-s-Water-Level-and-Rainfall-Monitoring-Dashboard",
@@ -56,21 +57,21 @@ const MyWork_Data = [
   },
   {
     w_no: "07",
-    w_name: "Real time Chat Application",
+    w_name: "Real-Time-Chat-Application",
     w_img: Project7_img,
     github_url: "https://github.com/Zahur13/ConnectSphere",
     website_url: "https://connect-sphere-fawn.vercel.app/",
   },
   {
     w_no: "08",
-    w_name: "Mini ShopHub",
+    w_name: "Mini-ShopHub",
     w_img: Project8_img,
     github_url: "https://github.com/Zahur13/Mini-ShopHub",
     website_url: "https://mini-shop-hub.vercel.app/",
   },
   {
     w_no: "09",
-    w_name: "Client Side Routing with React Router",
+    w_name: "Client-Side-Routing-with-React-Router",
     w_img: Project9_img,
     github_url: "https://github.com/Zahur13/ClientSideRouting",
     website_url: "https://client-side-routing-umber.vercel.app//",
@@ -84,10 +85,17 @@ const MyWork_Data = [
   },
   {
     w_no: "11",
-    w_name: "Text Translator",
+    w_name: "Text-Translator",
     w_img: Project11_img,
     github_url: "https://github.com/Zahur13/TextTranslator",
     website_url: "https://text-translator-ivory.vercel.app/",
+  },
+  {
+    w_no: "12",
+    w_name: "Forensic-Demo: Expose-the-Hidden",
+    w_img: Project12_img,
+    github_url: "https://github.com/Zahur13/Forensic-Demo-Site",
+    website_url: "https://forensic-demo-site.vercel.app/",
   },
 ];
 export default MyWork_Data;

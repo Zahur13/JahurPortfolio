@@ -30,7 +30,9 @@ const MyWork = () => {
   };
 
   // Display only first 6 projects initially, or all if showAll is true
-  const displayWorks = showAll ? MyWork_Data : MyWork_Data.slice(0, 6);
+  // Display only first 6 projects initially (newest first)
+  const reversedWorks = [...MyWork_Data].reverse();
+  const displayWorks = showAll ? reversedWorks : reversedWorks.slice(0, 6);
 
   return (
     <div id="work" className="mywork w-[133%] lg:w-[80%]">
