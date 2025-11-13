@@ -10,6 +10,8 @@ import Project9_img from "../assets/project9.png";
 import Project10_img from "../assets/project10.png";
 import Project11_img from "../assets/project11.png";
 import Project12_img from "../assets/project12.png";
+import Project13_img from "../assets/project13.png";
+import Project14_img from "../assets/project14.png";
 
 const MyWork_Data = [
   {
@@ -96,6 +98,21 @@ const MyWork_Data = [
     w_img: Project12_img,
     github_url: "https://github.com/Zahur13/Forensic-Demo-Site",
     website_url: "https://forensic-demo-site.vercel.app/",
+  },
+  {
+    w_no: "13",
+    w_name: "Refer-and-Earn",
+    w_img: Project13_img,
+    github_url: "https://github.com/Zahur13/ReferEarn",
+    website_url: "https://refer-earn-sigma.vercel.app/",
+  },
+  {
+    w_no: "14",
+    w_name: "Weather-Forecast-Enhanced-v2.0",
+    w_img: Project14_img,
+    github_url: "https://github.com/Zahur13/Weather-Forecast-Enhanced-v2.0",
+    website_url:
+      "https://weather-forecast-enhanced-v2-0-sspp-3fjofeqfd-zahur13s-projects.vercel.app/",
   },
 ];
 export default MyWork_Data;
